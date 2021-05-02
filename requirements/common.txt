@@ -1,0 +1,6 @@
+# This file contains dependencies for environment
+# Data analysis common kit
+numpy
+pandas
+django
+pymysql

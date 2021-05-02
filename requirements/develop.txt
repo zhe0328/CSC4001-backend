@@ -1,0 +1,5 @@
+# This file contains dependencies for production environment
+# Include common dependencies
+-r common.txt
+# Linting tool
+flake8

@@ -1,0 +1,7 @@
+[client]
+database = 'csc4001'
+user = 'CSC4001'
+password = 'HaBdaYm5j4XypEZ8'
+default-character-set = utf8
+host = '1.14.165.59'
+port = 3306
