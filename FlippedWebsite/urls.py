@@ -20,5 +20,17 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login)
+    path('', views.login),
+    path('login_validation/',views.login_validation),
+    path('homepage',views.index),
+    path('register',views.register),
+    path('community',views.community),
+    path('community_video',views.community_video),
+    path('trade_platform',views.trading),
+    path('trade_video',views.trading_video),
+    path('upload_video',views.upload_video),
+    path('personal_homepage',views.single_channel_home),
+    path('personal_video',views.single_channel_video),
+    path('personal_playlist',views.single_channel_playlist),
+    path('personal_channels',views.single_channel_channels)
 ]

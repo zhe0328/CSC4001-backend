@@ -33,15 +33,16 @@
 		<div class="login_form" id="login_form">
 		 	<div class="hd-lg">
 		 		<img src="{% static 'images/logo.png' %}" alt="">
-		 		<span>Log into your Oren account</span>
+		 		<span>Log into your Flipped account</span>
 		 	</div><!--hd-lg end-->
 			<div class="user-account-pr">
 				<form>
+					{% csrf_token %}
 					<div class="input-sec">
-						<input type="text" name="username" placeholder="Username">
+						<input type="text" name="username" placeholder="Username" id="username">
 					</div>
 					<div class="input-sec">
-						<input type="Password" name="password" placeholder="Password">
+						<input type="Password" name="password" placeholder="Password" id="password">
 					</div>
 					<div class="chekbox-lg">
 						<label>
@@ -50,14 +51,14 @@
 							<span>Remember me</span>
 						</label>
 					</div>
-					<div class="input-sec mb-0">
-						<button type="submit">Login</button>
-					</div><!--input-sec end-->
 				</form>
+					<div class="input-sec mb-0">
+						<button type="button" class="btn btn-dark btn-block" onclick="login()">Login</button>
+					</div><!--input-sec end-->
 				<a href="#" title="" class="fg_btn">Forgot password?</a>
 			</div><!--user-account end--->
 			<div class="fr-ps">
-				<h1>Don’t have an account? <a href="signup.html" title="" class="show_signup">Signup here.</a></h1>
+				<h1>Don’t have an account? <a href="/register" title="" class="show_signup">Signup here.</a></h1>
 			</div><!--fr-ps end-->
 		</div><!--login end--->
 
@@ -65,11 +66,33 @@
 
 </div><!--wrapper end-->
 
-
-
+<script  type="text/ecmascript" src="{% static 'js/sha1.js' %}"></script>
 <script>
-	function login_in(){
-		window.location.href="index.html";
+	function login(){
+		var username = document.getElementById("username").value;
+		var password = hex_sha1(document.getElementById("password").value);
+		console.log(username,password)
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: 'login_validation/',
+			contentType: "application/json",
+			data:JSON.stringify({
+				"username": username,
+				"password": password
+			}),
+			success: function (result) {
+				if (result.status == 100) {
+					window.location.href = "/homepage";
+				}else if (result.status == 200){
+					alert("Wrong password!")
+				}else if (result.status == 300){
+					alert("Username does not exist!")
+				}else if (result.status == 400){
+					alert("Empty username or password!")
+				}
+			}
+		});
 	}
 </script>
 
@@ -79,4 +102,5 @@
 <script  src="{% static 'js/script.js' %}"></script>
 
 </body>
+
 </html>

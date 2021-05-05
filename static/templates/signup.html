@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<link rel="icon" href="../images/Favicon.png">
-<link rel="stylesheet" type="text/css" href="../css/animate.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
-<link rel="stylesheet" type="text/css" href="../css/fontello.css">
-<link rel="stylesheet" type="text/css" href="../css/fontello-codes.css">
-<link rel="stylesheet" type="text/css" href="../css/thumbs-embedded.css">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" type="text/css" href="../css/responsive.css">
-<link rel="stylesheet" type="text/css" href="../css/color.css">
+<link rel="icon" href="{% static 'images/Favicon.png' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  '/css/flatpickr.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/fontello.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/fontello-codes.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/thumbs-embedded.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/color.css' %}">
 </head>
 <body>
 
@@ -33,8 +34,8 @@
 		
 		<div class="signup_form" id="signup_form">
 		 	<div class="hd-lg">
-		 		<img src="../images/logo.png" alt="">
-		 		<span>Register your Oren account</span>
+		 		<img src="% { static 'images/logo.png' }%" alt="">
+		 		<span>Register your Flipped account</span>
 		 	</div><!--hd-lg end-->
 			<div class="user-account-pr">
 				<form>
@@ -77,11 +78,11 @@
 					</div><!--input-sec end-->
 				</form>
 				<div class="form-text">
-					<p>By sIgning up you agree to Oren’s <a href="#" title="">Terms of Service</a> and <a href="#" title="">Privacy Policy</a> </p>
+					<p>By sIgning up you agree to Flipped’s <a href="#" title="">Terms of Service</a> and <a href="#" title="">Privacy Policy</a> </p>
 				</div>
 			</div><!--user-account end--->
 			<div class="fr-ps">
-				<h1>Already have an account?<a href="login.html" title="" class="show_signup"> Login here.</a></h1>
+				<h1>Already have an account?<a href="/" title="" class="show_signup"> Login here.</a></h1>
 			</div><!--fr-ps end-->
 		</div><!--login end--->
 
@@ -109,14 +110,11 @@
 </div><!--wrapper end-->
 
 
-
-
-
-<script src="../js/jquery.min.js"></script>
-<script src="../js/popper.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/flatpickr.js"></script>
-<script src="../js/script.js"></script>
+<script  src="{% static 'js/jquery.min.js' %}"></script>
+<script  src="{% static 'js/popper.js' %}"></script>
+<script  src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/flatpickr.js' %}"></script>
+<script  src="{% static 'js/script.js' %}"></script>
 
 
 </body>
