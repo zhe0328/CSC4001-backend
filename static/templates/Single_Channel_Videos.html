@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<link rel="icon" href="../images/Favicon.png">
-<link rel="stylesheet" type="text/css" href="../css/animate.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../css/fontello.css">
-<link rel="stylesheet" type="text/css" href="../css/fontello-codes.css">
-<link rel="stylesheet" type="text/css" href="../css/thumbs-embedded.css">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" type="text/css" href="../css/responsive.css">
-<link rel="stylesheet" type="text/css" href="../css/color.css">
+<link rel="icon" href="{% static 'images/Favicon.png' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/flatpickr.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/fontello.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/fontello-codes.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/thumbs-embedded.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/color.css' %}">
 </head>
 <body>
 
@@ -29,8 +31,8 @@
 						<a href="#" title="" class="menu">
 							<i class="icon-menu"></i>
 						</a>
-						<a href="index.html" title="" class="logo">
-							<img src="../images/logo.png" alt="">
+						<a href="/homepage" title="" class="logo">
+							<img src="{% static 'images/logo.png' %}" alt="">
 						</a>
 					</div><!--menu_logo end-->
 					<div class="search_form">
@@ -50,7 +52,7 @@
 						</li>
 						<li class="user-log">
 							<div class="user-ac-img">
-								<img src="../images/resources/user-img.png" alt="">
+								<img src="{% static 'images/resources/user-img.png' %}" alt="">
 							</div>
 							<div class="account-menu">
 								<h4>AZYRUSMAX <span class="usr-status">PRO</span></h4>
@@ -126,7 +128,7 @@
 							</div>
 						</li>
 						<li>
-							<a href="Upload_Video.html" title="" class="btn-default">Upload</a>
+							<a href="/upload_video" title="" class="btn-default">Upload</a>
 						</li>
 					</ul><!--controls-lv end-->
 					<div class="clearfix"></div>
@@ -289,42 +291,42 @@
 			<ul class="mm_menu">
 				<li>
 					<span class="usr_name">
-						<img src="../images/resources/th1.png" alt="">
+						<img src="{% static 'images/resources/th1.png' %}" alt="">
 					</span>
 					<a href="#" title="">Dr Disrespect</a>
 					<small>3</small>
 				</li>
 				<li>
 					<span class="usr_name">
-						<img src="../images/resources/th2.png" alt="">
+						<img src="{% static 'images/resources/th2.png' %}" alt="">
 					</span>
 					<a href="#" title="">ASMR</a>
 					<small>6</small>
 				</li>
 				<li>
 					<span class="usr_name">
-						<img src="../images/resources/th3.png" alt="">
+						<img src="{% static 'images/resources/th3.png' %}" alt="">
 					</span>
 					<a href="#" title="">Rivvrs</a>
 					<small>2</small>
 				</li>
 				<li>
 					<span class="usr_name">
-						<img src="../images/resources/th4.png" alt="">
+						<img src="{% static 'images/resources/th4.png' %}" alt="">
 					</span>
 					<a href="#" title="">The Verge</a>
 					<small>11</small>
 				</li>
 				<li>
 					<span class="usr_name">
-						<img src="../images/resources/th5.png" alt="">
+						<img src="{% static 'images/resources/th5.png' %}" alt="">
 					</span>
 					<a href="#" title="">Seeker</a>
 					<small>3</small>
 				</li>
 				<li>
 					<span class="usr_name">
-						<img src="../images/resources/sn.png" alt="">
+						<img src="{% static 'images/resources/sn.png' %}" alt="">
 					</span>
 					<a href="#" title="">Music</a>
 					<small>20</small>
@@ -391,7 +393,7 @@
 
 
 	<section class="channel-cover">
-		<img src="../images/resources/channel-banner.jpg" alt="">
+		<img src="{% static 'images/resources/channel-banner.jpg' %}" alt="">
 	</section><!--channel-cover end-->
 
 	<section class="videso_section">
@@ -399,7 +401,7 @@
 			<div class="container">
 				<div class="vcp_inf cr">
 					<span class="vc_hd">
-						<img src="../images/resources/sn.png" alt="">
+						<img src="{% static 'images/resources/sn.png' %}" alt="">
 					</span>
 					<div class="vc_info pr">
 						<h4>ScereBro <span class="verify_ic"><i class="icon-tick"></i></span></h4>
@@ -432,7 +434,7 @@
 				    <a class="nav-link" id="home_tab" data-toggle="tab" href="#home_vidz" role="tab" aria-controls="home_tab" aria-selected="true">Home</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" id="videos_taab" data-toggle="tab" href="#vvideo_tabz" role="tab" aria-controls="videos_taab" aria-selected="false">Videos </a>
+				    <a class="nav-link active" id="videos_taab" data-toggle="tab" href="#vvideo_tabz" role="tab" aria-controls="videos_taab" aria-selected="false">Videos</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" id="playlist-tab" data-toggle="tab" href="#playlist_tab" role="tab" aria-controls="playlist-tab" aria-selected="false">Playlist</a>
@@ -459,7 +461,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vid-medium.jpg" alt="">
+													<img src="{% static 'images/resources/vid-medium.jpg' %}" alt="">
 													<span class="vid-time">10:21</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -477,7 +479,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vid-medium2.jpg" alt="">
+													<img src="{% static 'images/resources/vid-medium2.jpg' %}" alt="">
 													<span class="vid-time">10:21</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -507,7 +509,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide1.png" alt="">
+														<img src="{% static 'images/resources/vide1.png' %}" alt="">
 														<span class="vid-time">10:21</span>
 														<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -525,7 +527,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide2.png" alt="">
+														<img src="{% static 'images/resources/vide2.png' %}" alt="">
 														<span class="vid-time">13:49</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -543,7 +545,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide3.png" alt="">
+														<img src="{% static 'images/resources/vide3.png' %}" alt="">
 														<span class="vid-time">2:54</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -561,7 +563,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide4.png" alt="">
+														<img src="{% static 'images/resources/vide4.png' %}" alt="">
 														<span class="vid-time">5:25</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -592,7 +594,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide5.png" alt="">
+														<img src="{% static 'images/resources/vide5.png' %}" alt="">
 														<span class="vid-time">4:01</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -610,7 +612,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide6.png" alt="">
+														<img src="{% static 'images/resources/vide6.png' %}" alt="">
 														<span class="vid-time">6:20</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -628,7 +630,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide7.png" alt="">
+														<img src="{% static 'images/resources/vide7.png' %}" alt="">
 														<span class="vid-time">8:16</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -646,7 +648,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide8.png" alt="">
+														<img src="{% static 'images/resources/vide8.png' %}" alt="">
 														<span class="vid-time">29:32</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -677,7 +679,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide9.png" alt="">
+														<img src="{% static 'images/resources/vide9.png' %}" alt="">
 														<span class="vid-time">4:01</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -695,7 +697,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide10.png" alt="">
+														<img src="{% static 'images/resources/vide10.png' %}" alt="">
 														<span class="vid-time">6:20</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -713,7 +715,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide11.png" alt="">
+														<img src="{% static 'images/resources/vide11.png' %}" alt="">
 														<span class="vid-time">8:16</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -731,7 +733,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide12.png" alt="">
+														<img src="{% static 'images/resources/vide12.png' %}" alt="">
 														<span class="vid-time">29:32</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -762,7 +764,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide13.png" alt="">
+														<img src="{% static 'images/resources/vide13.png' %}" alt="">
 														<span class="vid-time">10:21</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -780,7 +782,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide14.png" alt="">
+														<img src="{% static 'images/resources/vide14.png' %}" alt="">
 														<span class="vid-time">13:49</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -798,7 +800,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide15.png" alt="">
+														<img src="{% static 'images/resources/vide15.png' %}" alt="">
 														<span class="vid-time">2:54</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -816,7 +818,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide16.png" alt="">
+														<img src="{% static 'images/resources/vide16.png' %}" alt="">
 														<span class="vid-time">5:25</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -850,7 +852,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide1.png" alt="">
+													<img src="{% static 'images/resources/vide1.png' %}" alt="">
 													<span class="vid-time">10:21</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -868,7 +870,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide2.png" alt="">
+													<img src="{% static 'images/resources/vide2.png' %}" alt="">
 													<span class="vid-time">13:49</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -886,7 +888,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide3.png" alt="">
+													<img src="{% static 'images/resources/vide3.png' %}" alt="">
 													<span class="vid-time">2:54</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -904,7 +906,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide4.png" alt="">
+													<img src="{% static 'images/resources/vide4.png' %}" alt="">
 													<span class="vid-time">5:25</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -931,7 +933,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide1.png" alt="">
+													<img src="{% static 'images/resources/vide1.png' %}" alt="">
 													<span class="vid-time">10:21</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -949,7 +951,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide2.png" alt="">
+													<img src="{% static 'images/resources/vide2.png' %}" alt="">
 													<span class="vid-time">13:49</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -967,7 +969,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide3.png" alt="">
+													<img src="{% static 'images/resources/vide3.png' %}" alt="">
 													<span class="vid-time">2:54</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -985,7 +987,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide4.png" alt="">
+													<img src="{% static 'images/resources/vide4.png' %}" alt="">
 													<span class="vid-time">5:25</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -1003,7 +1005,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide5.png" alt="">
+													<img src="{% static 'images/resources/vide5.png' %}" alt="">
 													<span class="vid-time">4:01</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -1021,7 +1023,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide6.png" alt="">
+													<img src="{% static 'images/resources/vide6.png' %}" alt="">
 													<span class="vid-time">6:20</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -1039,7 +1041,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide7.png" alt="">
+													<img src="{% static 'images/resources/vide7.png' %}" alt="">
 													<span class="vid-time">8:16</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -1057,7 +1059,7 @@
 										<div class="videoo">
 											<div class="vid_thumbainl">
 												<a href="#" title="">
-													<img src="../images/resources/vide8.png" alt="">
+													<img src="{% static 'images/resources/vide8.png' %}" alt="">
 													<span class="vid-time">29:32</span>
 													<span class="watch_later">
 														<i class="icon-watch_later_fill"></i>
@@ -1091,7 +1093,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide1.png" alt="">
+														<img src="{% static 'images/resources/vide1.png' %}" alt="">
 														<span class="vid-time">10:21</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1109,7 +1111,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide2.png" alt="">
+														<img src="{% static 'images/resources/vide2.png' %}" alt="">
 														<span class="vid-time">13:49</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1127,7 +1129,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide3.png" alt="">
+														<img src="{% static 'images/resources/vide3.png' %}" alt="">
 														<span class="vid-time">2:54</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1145,7 +1147,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide4.png" alt="">
+														<img src="{% static 'images/resources/vide4.png' %}" alt="">
 														<span class="vid-time">5:25</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1176,7 +1178,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide5.png" alt="">
+														<img src="{% static 'images/resources/vide5.png' %}" alt="">
 														<span class="vid-time">4:01</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1194,7 +1196,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide6.png" alt="">
+														<img src="{% static 'images/resources/vide6.png' %}" alt="">
 														<span class="vid-time">6:20</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1212,7 +1214,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide7.png" alt="">
+														<img src="{% static 'images/resources/vide7.png' %}" alt="">
 														<span class="vid-time">8:16</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1230,7 +1232,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide8.png" alt="">
+														<img src="{% static 'images/resources/vide8.png' %}" alt="">
 														<span class="vid-time">29:32</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1261,7 +1263,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide9.png" alt="">
+														<img src="{% static 'images/resources/vide9.png' %}" alt="">
 														<span class="vid-time">4:01</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1279,7 +1281,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide10.png" alt="">
+														<img src="{% static 'images/resources/vide10.png' %}" alt="">
 														<span class="vid-time">6:20</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1297,7 +1299,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide11.png" alt="">
+														<img src="{% static 'images/resources/vide11.png' %}" alt="">
 														<span class="vid-time">8:16</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1315,7 +1317,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide12.png" alt="">
+														<img src="{% static 'images/resources/vide12.png' %}" alt="">
 														<span class="vid-time">29:32</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1346,7 +1348,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide1.png" alt="">
+														<img src="{% static 'images/resources/vide1.png' %}" alt="">
 														<span class="vid-time">10:21</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1364,7 +1366,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide2.png" alt="">
+														<img src="{% static 'images/resources/vide2.png' %}" alt="">
 														<span class="vid-time">13:49</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1382,7 +1384,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide3.png" alt="">
+														<img src="{% static 'images/resources/vide3.png' %}" alt="">
 														<span class="vid-time">2:54</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1400,7 +1402,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide4.png" alt="">
+														<img src="{% static 'images/resources/vide4.png' %}" alt="">
 														<span class="vid-time">5:25</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1431,7 +1433,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide1.png" alt="">
+														<img src="{% static 'images/resources/vide1.png' %}" alt="">
 														<span class="vid-time">10:21</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1449,7 +1451,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide2.png" alt="">
+														<img src="{% static 'images/resources/vide2.png' %}" alt="">
 														<span class="vid-time">13:49</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1467,7 +1469,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide3.png" alt="">
+														<img src="{% static 'images/resources/vide3.png' %}" alt="">
 														<span class="vid-time">2:54</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1485,7 +1487,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide4.png" alt="">
+														<img src="{% static 'images/resources/vide4.png' %}" alt="">
 														<span class="vid-time">5:25</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1516,7 +1518,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide5.png" alt="">
+														<img src="{% static 'images/resources/vide5.png' %}" alt="">
 														<span class="vid-time">4:01</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1534,7 +1536,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide6.png" alt="">
+														<img src="{% static 'images/resources/vide6.png' %}" alt="">
 														<span class="vid-time">6:20</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1552,7 +1554,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide7.png" alt="">
+														<img src="{% static 'images/resources/vide7.png' %}" alt="">
 														<span class="vid-time">8:16</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1570,7 +1572,7 @@
 											<div class="videoo">
 												<div class="vid_thumbainl">
 													<a href="#" title="">
-														<img src="../images/resources/vide8.png" alt="">
+														<img src="{% static 'images/resources/vide8.png' %}" alt="">
 														<span class="vid-time">29:32</span>
 														<span class="watch_later">
 															<i class="icon-watch_later_fill"></i>
@@ -1602,12 +1604,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl1.jpg" alt="">
+												<img src="{% static 'images/resources/cl1.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb1.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb1.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Newfox Media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>13M Subscribers . 72 Videos 374M views</span>
@@ -1618,12 +1620,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl2.jpg" alt="">
+												<img src="{% static 'images/resources/cl2.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb2.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb2.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Adaptable</a> </h4>
 											<span>6M Subscribers . 106 Videos 218M views</span>
@@ -1634,12 +1636,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl3.jpg" alt="">
+												<img src="{% static 'images/resources/cl3.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb3.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb3.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Immense </a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>28K Subscribers . 32 Videos 3M views</span>
@@ -1650,12 +1652,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl4.jpg" alt="">
+												<img src="{% static 'images/resources/cl4.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb4.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb4.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Kittens</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>8M Subscribers . 340 Videos 637M views</span>
@@ -1666,12 +1668,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl5.jpg" alt="">
+												<img src="{% static 'images/resources/cl5.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb5.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb5.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Shoe</a> </h4>
 											<span>2M Subscribers . 62 Videos 4M views</span>
@@ -1682,12 +1684,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl6.jpg" alt="">
+												<img src="{% static 'images/resources/cl6.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb6.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb6.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Pink</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>49K Subscribers . 13 Videos 890K views</span>
@@ -1698,12 +1700,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl7.jpg" alt="">
+												<img src="{% static 'images/resources/cl7.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb7.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb7.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Teeny-tiny</a></h4>
 											<span>98K Subscribers . 45 Videos 6M views</span>
@@ -1714,12 +1716,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl8.jpg" alt="">
+												<img src="{% static 'images/resources/cl8.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb8.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb8.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Intelligent </a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>74K Subscribers . 49 Videos 3M views</span>
@@ -1736,12 +1738,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl9.jpg" alt="">
+												<img src="{% static 'images/resources/cl9.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb9.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb9.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Woozy</a> </h4>
 											<span>19M Subscribers . 117 Videos 43M views</span>
@@ -1752,12 +1754,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl10.jpg" alt="">
+												<img src="{% static 'images/resources/cl10.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb10.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb10.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Laugh </a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>53K Subscribers . 76 Videos 24M views</span>
@@ -1768,12 +1770,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl11.jpg" alt="">
+												<img src="{% static 'images/resources/cl11.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb11.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb11.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Breakable </a> </h4>
 											<span>2M Subscribers . 40 Videos 13M views</span>
@@ -1784,12 +1786,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl12.jpg" alt="">
+												<img src="{% static 'images/resources/cl12.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb12.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb12.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Morning</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>54K Subscribers . 35 Videos 6M views</span>
@@ -1800,12 +1802,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl13.jpg" alt="">
+												<img src="{% static 'images/resources/cl13.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb13.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb13.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Fire</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>52M Subscribers . 266 Videos 2340M views</span>
@@ -1816,12 +1818,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl14.jpg" alt="">
+												<img src="{% static 'images/resources/cl14.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb14.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb14.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Swanky</a> </h4>
 											<span>55K Subscribers . 36 Videos 16M views</span>
@@ -1832,12 +1834,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl15.jpg" alt="">
+												<img src="{% static 'images/resources/cl15.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb15.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb15.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Miscreant</a> </h4>
 											<span>80K Subscribers . 71 Videos 32M views</span>
@@ -1848,12 +1850,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl16.jpg" alt="">
+												<img src="{% static 'images/resources/cl16.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb16.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb16.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Woebegone </a> </h4>
 											<span>47K Subscribers . 380 Videos 182M views</span>
@@ -1870,12 +1872,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl17.jpg" alt="">
+												<img src="{% static 'images/resources/cl17.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb17.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb17.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Develop</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>2K Subscribers . 7 Videos 7K views</span>
@@ -1886,12 +1888,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl18.jpg" alt="">
+												<img src="{% static 'images/resources/cl18.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb18.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb18.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Picture</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
 											<span>253 Subscribers . 6 Videos 24K views</span>
@@ -1902,12 +1904,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl19.jpg" alt="">
+												<img src="{% static 'images/resources/cl19.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb19.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb19.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Weather </a> </h4>
 											<span>282 Subscribers . 3 Videos 18K views</span>
@@ -1918,12 +1920,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl20.jpg" alt="">
+												<img src="{% static 'images/resources/cl20.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb20.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb20.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Word</a> </h4>
 											<span>2K Subscribers . 16 Videos 28K views</span>
@@ -1934,12 +1936,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl21.jpg" alt="">
+												<img src="{% static 'images/resources/cl21.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb21.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb21.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Maximum</a> </h4>
 											<span>3K Subscribers . 9 Videos 12K views</span>
@@ -1950,12 +1952,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl22.jpg" alt="">
+												<img src="{% static 'images/resources/cl22.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb22.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb22.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Media Laws</a> </h4>
 											<span>23 Subscribers . 2 Videos 3K views</span>
@@ -1966,12 +1968,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl23.jpg" alt="">
+												<img src="{% static 'images/resources/cl23.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb23.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb23.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">Light</a> </h4>
 											<span>380 Subscribers . 3 Videos 6K views</span>
@@ -1982,12 +1984,12 @@
 									<div class="videoo">
 										<div class="vid_thumbainl">
 											<a href="single_video_page.html" title="">
-												<img src="../images/resources/cl24.jpg" alt="">
+												<img src="{% static 'images/resources/cl24.jpg' %}" alt="">
 											</a>	
 										</div><!--vid_thumbnail end-->
 										<div class="video_info">
 											<div class="vid_thumb">
-												<img src="../images/resources/vid-thumb24.png" alt="">
+												<img src="{% static 'images/resources/vid-thumb24.png' %}" alt="">
 											</div>
 											<h4><a href="#" title="">New Trailers </a> </h4>
 											<span>2K Subscribers . 6 Videos 28K views</span>
@@ -2087,10 +2089,11 @@
 
 
 
-<script src="../js/jquery.min.js"></script>
-<script src="../js/popper.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/script.js"></script>
+<script  src="{% static 'js/jquery.min.js' %}"></script>
+<script  src="{% static 'js/popper.js' %}"></script>
+<script  src="{% static 'js/bootstrap.min.js' %}"></script>
+<script  src="{% static 'js/flatpickr.js' %}"></script>
+<script  src="{% static 'js/script.js' %}"></script>
 
 
 </body>
