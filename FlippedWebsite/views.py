@@ -4,6 +4,7 @@ import pandas as pd
 from django.db import connection
 import json
 
+
 def login(request):
     return render(request, 'login.html')
 
@@ -55,39 +56,62 @@ def single_channel_channels(request):
 def login_validation(request):
     return_data = dict()
     if request.method == "POST":
-        print("Temp!")
         post_body = request.body
-        print(post_body)
         json_result = json.loads(post_body)
         username = json_result['username']
         password = json_result['password']
         cursor = connection.cursor()
-        # username = request.Post.get('username',None)
-        # password = request.Post.get('password',None)
         if username and password:
             username = username.strip()
             try:
-                user_command = "select password from user where username = '{}'".format(
-                    username)
-                cursor.execute(user_command)
+                user_sql = "select password from user where username = %s"
+                cursor.execute(user_sql, username)
                 user_list = pd.DataFrame(cursor.fetchall())
                 for data in user_list.itertuples():
                     user_pwd = data[1]
                 if user_pwd == password:
                     return_data["status"] = 100
                     return JsonResponse(return_data)
-                    # return render(request,'index.html')
                 else:
                     return_data["status"] = 200
                     return JsonResponse(return_data)
-                    # return render(request,'login.html',{'error':'Wrong password!'})
             except:
                 return_data["status"] = 300
                 return JsonResponse(return_data)
-                # return render(request,'login.html',{'error':'Username does not exist!'})
-
             finally:
                 connection.close()
     return_data["status"] = 400
     return JsonResponse(return_data)
-    # return render(request,'login.html',{'error':'Empty username or password!'})
+
+
+def create_user(request):
+    return_data = dict()
+    if request.method == "POST":
+        post_body = request.body
+        json_result = json.loads(post_body)
+        username = json_result['username']
+        password = json_result['password']
+        email = json_result['email']
+        gender = json_result['gender']
+        cursor = connection.cursor()
+        username = username.strip()
+        try:
+            user_sql = "select * from user where username = %s"
+            cursor.execute(user_sql, username)
+            user_list = pd.DataFrame(cursor.fetchall())
+            if user_list.empty:
+                user_sql = "insert into user (username, password, email, gender) values (\'%s\',\'%s\',\'%s\',\'%s\')"%(username,password,email,gender)
+                cursor.execute(user_sql)
+                return_data["status"] = 100
+                return JsonResponse(return_data)
+            else:
+                return_data["status"] = 200
+                return JsonResponse(return_data)
+        except:
+            return_data["status"] = 300
+            return JsonResponse(return_data)
+        finally:
+            connection.close()
+
+    return_data["status"] = 400
+    return JsonResponse(return_data)
