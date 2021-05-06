@@ -12,13 +12,13 @@ git clone git@github.com:118010362/CSC4001-backend.git
 cd CSC4001-backend
 git pull
 
-# 在虚拟环境下安装相应的依赖包
-pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple -r ./requirements/common.txt
+# 安装相应的依赖包
+pip install ./requirements/common.txt
 
 # 运行项目
 python3 manage.py runserver
 
-#如果需要迁移 则运行
+# 如果需要迁移 则运行
 python3 manage.py makemigrations
 python3 manage.py migrate
 
