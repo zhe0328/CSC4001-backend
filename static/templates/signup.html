@@ -10,7 +10,7 @@
 <link rel="icon" href="{% static 'images/Favicon.png' %}">
 <link rel="stylesheet" type="text/css" href="{% static  'css/animate.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static  'css/bootstrap.min.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static  '/css/flatpickr.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static  'css/flatpickr.min.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static  'css/fontello.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static  'css/fontello-codes.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static  'css/thumbs-embedded.css' %}">
@@ -34,58 +34,76 @@
 		
 		<div class="signup_form" id="signup_form">
 		 	<div class="hd-lg">
-		 		<img src="% { static 'images/logo.png' }%" alt="">
+		 		<img src="{% static 'images/logo.png' %}" alt="">
 		 		<span>Register your Flipped account</span>
 		 	</div><!--hd-lg end-->
 			<div class="user-account-pr">
 				<form>
 					<div class="input-sec mgb25">
-						<input type="text" name="username" placeholder="Username">
+						<input type="text" name="username" id="username" placeholder="Username">
 						<label>Letters A-Z or a-z , Numbers 0-9 and Underscores _</label>
 					</div>
 					<div class="input-sec">
-						<input type="email" name="email" placeholder="Email address">
+						<input type="email" name="email" id="email" placeholder="Email address">
 					</div>
 					<div class="input-sec">
-						<input type="Password" name="password" placeholder="Password">
+						<input type="Password" name="password" id="password" placeholder="Password">
 					</div>
 					<div class="input-sec">
-						<input type="password" name="confirm-password" placeholder="Re-enter password">
-					</div>
-					<div class="input-sec flatpickr">
-						<input type="number" name="date" class="flatpickr-input" placeholder="Select Date..." data-input>
+						<input type="password" name="repassword" id="repassword" placeholder="Re-enter password" onkeyup="checkpassword()">
+						<label id="span_password"></label>
 					</div>
 					<div class="chekbox-lg">
 						<ul>
 							<li>
 								<label>
-									<input type="radio" name="gender" value="Male">
+									<input type="radio" id="male" name="gender" value="Male">
 									<b class="checkmark"> </b>
 									<span>Male</span>
 								</label>		
 							</li>
 							<li>
 								<label>
-									<input type="radio" name="gender" value="Female">
+									<input type="radio" id="female" name="gender" value="Female">
 									<b class="checkmark"> </b>
 									<span>Female</span>
 								</label>		
 							</li>
 						</ul>
 					</div>
-					<div class="input-sec mb-0">
-						<button type="submit">Signup</button>
-					</div><!--input-sec end-->
 				</form>
+					<div class="input-sec mb-0">
+						<button type="button" class="btn btn-dark btn-block" onclick="create_user()">Sign Up</button>
+					</div><!--input-sec end-->
 				<div class="form-text">
-					<p>By sIgning up you agree to Flipped’s <a href="#" title="">Terms of Service</a> and <a href="#" title="">Privacy Policy</a> </p>
+					<p>&nbsp;</p>
+					<p>By signing up you agree to Flipped’s <a href="#" title="">Terms of Service</a> and <a href="#" title="">Privacy Policy</a> </p>
 				</div>
 			</div><!--user-account end--->
 			<div class="fr-ps">
 				<h1>Already have an account?<a href="/" title="" class="show_signup"> Login here.</a></h1>
 			</div><!--fr-ps end-->
 		</div><!--login end--->
-
+		<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title">Confirm</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <p>You have already created your account.</p>
+				  <p>Now you can sign in!</p>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-dark" onclick="sign_in()">Sign In</button>
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+				</div>
+			  </div>
+			</div>
+		</div>
 	</section><!--form_popup end-->
 
 	<section class="more_items_sec br-top text-center">
@@ -109,6 +127,57 @@
 
 </div><!--wrapper end-->
 
+<script  type="text/ecmascript" src="{% static 'js/sha1.js' %}"></script>
+<script>
+	function checkpassword() {
+    		var password = hex_sha1(document.getElementById("password").value);
+    		var repassword = hex_sha1(document.getElementById("repassword").value);
+			var span = document.getElementById("span_password");
+			if(password != repassword) {
+            	span.innerHTML = "The repassword should be equal to password!";
+            	return false;
+			}
+			else {
+				span.innerHTML = "";
+				return true;
+			}
+    	}
+	function create_user(){
+		var username = document.getElementById("username").value;
+		var password = hex_sha1(document.getElementById("password").value);
+		var email = document.getElementById("email").value;
+		// var gender1 = document.getElementById("male").value;
+		// var gender2 = document.getElementById("female").value;
+		var group1 = $("[name='gender']").filter(":checked"); 
+		var gender = group1.attr("id");
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: 'create_user/',
+			contentType: "application/json",
+			data:JSON.stringify({
+				"username": username,
+				"password": password,
+				"email": email,
+				"gender": gender
+			}),
+			success: function (result) {
+				if (result.status == 100) {
+					$("#confirmModal").modal('show')
+				}else if (result.status == 200){
+					alert("The username is used!")
+				}else if (result.status == 300){
+					alert("Username does not exist!")
+				}else if (result.status == 400){
+					alert("Not post request!")
+				}
+			}
+		});
+	}
+	function sign_in(){
+		window.location.href = "/";
+	}
+</script>
 
 <script  src="{% static 'js/jquery.min.js' %}"></script>
 <script  src="{% static 'js/popper.js' %}"></script>
