@@ -12,6 +12,12 @@ git clone git@github.com:118010362/CSC4001-backend.git
 cd CSC4001-backend
 git pull
 
+# 创建项目运行的虚拟环境
+python3 -m venv venv
+
+# 进入到创建的虚拟环境
+source /venv/bin/activate
+
 # 安装相应的依赖包
 pip install ./requirements/common.txt
 
