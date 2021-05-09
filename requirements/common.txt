@@ -4,3 +4,5 @@ numpy
 pandas
 django
 pymysql
+djangorestframework
+django-rest-swagger
