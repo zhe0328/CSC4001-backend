@@ -22,7 +22,7 @@ def community(request):
 
 
 def community_video(request):
-    return render(request, 'Single_Video_Simplified_Page.html')
+    return render(request, 'community_video.html')
 
 
 def trading(request):
@@ -39,19 +39,6 @@ def upload_video(request):
 
 def single_channel_home(request):
     return render(request, "Single_Channel_Home.html")
-
-
-def single_channel_video(request):
-    return render(request, "Single_Channel_Videos.html")
-
-
-def single_channel_playlist(request):
-    return render(request, "Single_Channel_Playlist.html")
-
-
-def single_channel_channels(request):
-    return render(request, "Single_Channel_Channels.html")
-
 
 def login_validation(request):
     return_data = dict()
