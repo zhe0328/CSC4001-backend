@@ -29,9 +29,6 @@ urlpatterns = [
     path('trade_video',views.trading_video),
     path('upload_video',views.upload_video),
     path('personal_homepage',views.single_channel_home),
-    path('personal_video',views.single_channel_video),
-    path('personal_playlist',views.single_channel_playlist),
-    path('personal_channels',views.single_channel_channels),
     path('login_validation/',views.login_validation), # post
     path('create_user/',views.create_user) # post
 ]
