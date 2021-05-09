@@ -22,7 +22,7 @@ def community(request):
 
 
 def community_video(request):
-    return render(request, 'Single_Video_Simplified_Page.html')
+    return render(request, 'community_video.html')
 
 
 def trading(request):
@@ -39,10 +39,6 @@ def upload_video(request):
 
 def single_channel_home(request):
     return render(request, "Single_Channel_Home.html")
-
-
-def page_not_found(request, exception):
-    return render(request, '404.html')
 
 
 def login_validation(request):

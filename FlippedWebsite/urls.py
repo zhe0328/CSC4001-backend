@@ -39,4 +39,3 @@ urlpatterns = [
     path('update_todo_list/', views.update_todo_list),  # post
 ]
 
-handler404 = views.page_not_found
