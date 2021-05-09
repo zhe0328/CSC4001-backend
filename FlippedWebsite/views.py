@@ -22,7 +22,7 @@ def community(request):
 
 
 def community_video(request):
-    return render(request, 'Single_Video_Simplified_Page.html')
+    return render(request, 'community_video.html')
 
 
 def trading(request):
