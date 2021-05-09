@@ -385,392 +385,1443 @@
 						<h3>Tasks Category</h3>
 						<a href="#" title="" class="view-btn">View all</a>
 						<div class="vidz_list">
-							<div class="row">
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vcp_inf">
-											<div class="vc_hd">
-												<img src="{% static 'images/resources/th1.png' %}" alt="">
-											</div>
-											<div class="vc_info">
-												<h4><a href="Single_Channel_Home.html" title="">Video Editing</a></h4>
-											</div>
-											<span class="vc-count">10</span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth" style="margin-left: 12.5%;">
-									<div class="videoo">
-										<div class="vcp_inf">
-											<div class="vc_hd">
-												<img src="{% static 'images/resources/th2.png' %}" alt="">
-											</div>
-											<div class="vc_info">
-												<h4><a href="Single_Channel_Home.html" title="">Video Dubbing</a></h4>
-											</div>
-											<span class="vc-count">6</span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth" style="margin-left: 12.5%;">
-									<div class="videoo">
-										<div class="vcp_inf">
-											<div class="vc_hd">
-												<img src="{% static 'images/resources/th3.png' %}" alt="">
-											</div>
-											<div class="vc_info">
-												<h4><a href="Single_Channel_Home.html" title="">Adding Subtitles</a></h4>
-											</div>
-											<span class="vc-count">2</span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-							</div>
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<div class="col-lg-4">
+										<li class="nav-item">
+											<div class="videoo">
+												<div class="vcp_inf">
+													<div class="vc_hd">
+														<img src="{% static 'images/resources/th1.png' %}" alt="">
+													</div>
+													<div class="vc_info">
+														<h4><a class="nav-link active" id="home_tab" data-toggle="tab" href="#video_edit" role="tab" aria-controls="home_tab" aria-selected="true">Video Editing</a></h4>
+													</div>
+												</div>
+											</div><!--videoo end-->
+										</li>
+									</div>
+									<div class="col-lg-4">
+										<li class="nav-item">
+											<div class="videoo">
+												<div class="vcp_inf">
+													<div class="vc_hd">
+														<img src="{% static 'images/resources/th2.png' %}" alt="">
+													</div>
+													<div class="vc_info">
+														<h4><a class="nav-link" id="videos_taab" data-toggle="tab" href="#video_dub" role="tab" aria-controls="videos_taab" aria-selected="false">Video Dubbing</a></h4>
+													</div>
+												</div>
+											</div><!--videoo end-->
+										</li>
+									</div>
+									<div class="col-lg-4">
+										<li class="nav-item">
+											<div class="videoo">
+												<div class="vcp_inf">
+													<div class="vc_hd">
+														<img src="{% static 'images/resources/th3.png' %}" alt="">
+													</div>
+													<div class="vc_info">
+														<h4><a class="nav-link" id="channels-tab" data-toggle="tab" href="#add_subtitles" role="tab" aria-controls="channels-tab" aria-selected="false">Adding Subtitles</a></h4>
+													</div>
+												</div>
+											</div><!--videoo end-->
+										</li>
+									</div>
+									
+						  		</ul><!--nav-tabs end-->	
+															
 						</div><!--vidz_list end-->
 					</div><!--vidz_videos end-->
 				</div>
 			</div><!--vidz-row end-->
-			<div class="vidz-row">
-				<div class="container">
-					<div class="vidz_sec">
-						<h3>Latest Tasks</h3>
-						<div class="vidz_list">
-							<div class="row">
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide1.png' %}" alt="">
-												<span class="vid-time">10:21</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                            <h4><span>Price : &nbsp; $5.50</span></h4>
-                                            <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+
+			<div class="tab-content p-0" id="myTabContent">
+				<div class="tab-pane fade show active" role="tabpanel" aria-labelledby="home_tab">
+					<div class="home_tb_details">
+						<div class="vidz-row">
+							<div class="container">
+								<div class="vidz_sec">
+									<h3>Video Editing: Latest Tasks</h3>
+									<div class="vidz_list">
+										<div class="row">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide1.png' %}" alt="">
+															<span class="vid-time">10:21</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+														<h4><span>Price : &nbsp; $5.50</span></h4>
+														<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide2.png' %}" alt="">
+															<span class="vid-time">13:49</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $6.20</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-05-20 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide3.png' %}" alt="">
+															<span class="vid-time">2:54</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Editing</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide4.png' %}" alt="">
+															<span class="vid-time">5:25</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide5.png' %}" alt="">
+															<span class="vid-time">4:01</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide6.png' %}" alt="">
+															<span class="vid-time">6:20</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide7.png' %}" alt="">
+															<span class="vid-time">8:16</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide8.png' %}" alt="">
+															<span class="vid-time">29:32</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
 										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide2.png' %}" alt="">
-												<span class="vid-time">13:49</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                                <h4><span>Price : &nbsp; $6.20</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-05-20 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide3.png' %}" alt="">
-												<span class="vid-time">2:54</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Editing</h4>
-                                                <h4><span>Price : &nbsp; $5.50</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide4.png' %}" alt="">
-												<span class="vid-time">5:25</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                                <h4><span>Price : &nbsp; $5.50</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide5.png' %}" alt="">
-												<span class="vid-time">4:01</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide6.png' %}" alt="">
-												<span class="vid-time">6:20</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                                <h4><span>Price : &nbsp; $5.50</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide7.png' %}" alt="">
-												<span class="vid-time">8:16</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                                <h4><span>Price : &nbsp; $5.50</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide8.png' %}" alt="">
-												<span class="vid-time">29:32</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                                <h4><span>Price : &nbsp; $5.50</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
+									</div><!--vidz_list end-->
+								</div><!--vidz_videos end-->
 							</div>
-						</div><!--vidz_list end-->
-					</div><!--vidz_videos end-->
+						</div><!--vidz-row end-->
+						<div class="vidz-row">
+							<div class="container">
+								<div class="vidz_sec">
+									<h3>All Tasks</h3>
+									<div class="vidz_list">
+										<div class="row">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide1.png' %}" alt="">
+															<span class="vid-time">10:21</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide2.png' %}" alt="">
+															<span class="vid-time">13:49</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide3.png' %}" alt="">
+															<span class="vid-time">2:54</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide4.png' %}" alt="">
+															<span class="vid-time">5:25</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide5.png' %}" alt="">
+															<span class="vid-time">4:01</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide6.png' %}" alt="">
+															<span class="vid-time">6:20</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide7.png' %}" alt="">
+															<span class="vid-time">8:16</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide8.png' %}" alt="">
+															<span class="vid-time">29:32</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+										</div>
+									</div><!--vidz_list end-->
+									<div class="video_pagination pagination-centered" style="margin-top: 30px;">
+										<ul class="pagination pagination-sm justify-content-center">
+											<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+											</li>
+										</ul>
+									</div>
+								</div><!--vidz_videos end-->
+								
+							</div>
+						</div><!--vidz-row end-->
+					</div><!--home_tb_details end-->
 				</div>
-			</div><!--vidz-row end-->
-			<div class="vidz-row">
-				<div class="container">
-					<div class="vidz_sec">
-						<h3>All Tasks</h3>
-						<div class="vidz_list">
-							<div class="row">
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide1.png' %}" alt="">
-												<span class="vid-time">10:21</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
+				  <div class="tab-pane" id="video_edit" role="tabpanel" aria-labelledby="videos_taab">
+					<div class="videso_tb_details">
+						<div class="container">
+							<div class="vidz-row">
+								<div class="container">
+									<div class="vidz_sec">
+										<h3>Video Editing: Latest Tasks</h3>
+										<div class="vidz_list">
+											<div class="row">
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide1.png' %}" alt="">
+																<span class="vid-time">10:21</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide2.png' %}" alt="">
+																<span class="vid-time">13:49</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+																<h4><span>Price : &nbsp; $6.20</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-05-20 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide3.png' %}" alt="">
+																<span class="vid-time">2:54</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Editing</h4>
+																<h4><span>Price : &nbsp; $5.50</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide4.png' %}" alt="">
+																<span class="vid-time">5:25</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+																<h4><span>Price : &nbsp; $5.50</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide5.png' %}" alt="">
+																<span class="vid-time">4:01</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide6.png' %}" alt="">
+																<span class="vid-time">6:20</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+																<h4><span>Price : &nbsp; $5.50</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide7.png' %}" alt="">
+																<span class="vid-time">8:16</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+																<h4><span>Price : &nbsp; $5.50</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide8.png' %}" alt="">
+																<span class="vid-time">29:32</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+																<h4><span>Price : &nbsp; $5.50</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+											</div>
+										</div><!--vidz_list end-->
+									</div><!--vidz_videos end-->
 								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide2.png' %}" alt="">
-												<span class="vid-time">13:49</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+							</div><!--vidz-row end-->
+							<div class="vidz-row">
+								<div class="container">
+									<div class="vidz_sec">
+										<h3>All Tasks</h3>
+										<div class="vidz_list">
+											<div class="row">
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide1.png' %}" alt="">
+																<span class="vid-time">10:21</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide2.png' %}" alt="">
+																<span class="vid-time">13:49</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide3.png' %}" alt="">
+																<span class="vid-time">2:54</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide4.png' %}" alt="">
+																<span class="vid-time">5:25</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide5.png' %}" alt="">
+																<span class="vid-time">4:01</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide6.png' %}" alt="">
+																<span class="vid-time">6:20</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide7.png' %}" alt="">
+																<span class="vid-time">8:16</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+													<div class="videoo">
+														<div class="vid_thumbainl">
+															<a href="/trade_video" title="">
+																<img src="{% static 'images/resources/vide8.png' %}" alt="">
+																<span class="vid-time">29:32</span>
+																<span class="watch_later">
+																	<i class="icon-watch_later_fill"></i>
+																</span>
+															</a>	
+														</div><!--vid_thumbnail end-->
+														<div class="video_info">
+															<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+															<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+																<h4><span>Price : &nbsp; $10.00</span></h4>
+																<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+														</div>
+													</div><!--videoo end-->
+												</div>
+											</div>
+										</div><!--vidz_list end-->
+										<div class="video_pagination pagination-centered" style="margin-top: 30px;">
+											<ul class="pagination pagination-sm justify-content-center">
+												<li class="page-item disabled">
+												<a class="page-link" href="#" tabindex="-1">Previous</a>
+												</li>
+												<li class="page-item"><a class="page-link" href="#">1</a></li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item"><a class="page-link" href="#">4</a></li>
+												<li class="page-item">
+												<a class="page-link" href="#">Next</a>
+												</li>
+											</ul>
 										</div>
-									</div><!--videoo end-->
+									</div><!--vidz_videos end-->
+									
 								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide3.png' %}" alt="">
-												<span class="vid-time">2:54</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+							</div><!--vidz-row end-->
+					  </div>
+					</div><!--videso_tb_details end-->
+				  </div>
+				  <div class="tab-pane fade" id="video_dub" role="tabpanel" aria-labelledby="playlist-tab">
+					  <div class="playlist_tab">
+						<div class="vidz-row">
+							<div class="container">
+								<div class="vidz_sec">
+									<h3>Video Dubbing: Latest Tasks</h3>
+									<div class="vidz_list">
+										<div class="row">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide1.png' %}" alt="">
+															<span class="vid-time">10:21</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+														<h4><span>Price : &nbsp; $5.50</span></h4>
+														<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide2.png' %}" alt="">
+															<span class="vid-time">13:49</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $6.20</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-05-20 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide3.png' %}" alt="">
+															<span class="vid-time">2:54</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Editing</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide4.png' %}" alt="">
+															<span class="vid-time">5:25</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide5.png' %}" alt="">
+															<span class="vid-time">4:01</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide6.png' %}" alt="">
+															<span class="vid-time">6:20</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide7.png' %}" alt="">
+															<span class="vid-time">8:16</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide8.png' %}" alt="">
+															<span class="vid-time">29:32</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
 										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide4.png' %}" alt="">
-												<span class="vid-time">5:25</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide5.png' %}" alt="">
-												<span class="vid-time">4:01</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide6.png' %}" alt="">
-												<span class="vid-time">6:20</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide7.png' %}" alt="">
-												<span class="vid-time">8:16</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
-								<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
-									<div class="videoo">
-										<div class="vid_thumbainl">
-											<a href="/trade_video" title="">
-												<img src="{% static 'images/resources/vide8.png' %}" alt="">
-												<span class="vid-time">29:32</span>
-												<span class="watch_later">
-													<i class="icon-watch_later_fill"></i>
-												</span>
-											</a>	
-										</div><!--vid_thumbnail end-->
-										<div class="video_info">
-											<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
-                                            <h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
-                                                <h4><span>Price : &nbsp; $10.00</span></h4>
-                                                <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
-										</div>
-									</div><!--videoo end-->
-								</div>
+									</div><!--vidz_list end-->
+								</div><!--vidz_videos end-->
 							</div>
-						</div><!--vidz_list end-->
-                        <div class="video_pagination pagination-centered" style="margin-top: 30px;">
-                            <ul class="pagination pagination-sm justify-content-center">
-                                <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </div>
-					</div><!--vidz_videos end-->
-                    
-                </div>
-			</div><!--vidz-row end-->
+						</div><!--vidz-row end-->
+						<div class="vidz-row">
+							<div class="container">
+								<div class="vidz_sec">
+									<h3>All Tasks</h3>
+									<div class="vidz_list">
+										<div class="row">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide1.png' %}" alt="">
+															<span class="vid-time">10:21</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide2.png' %}" alt="">
+															<span class="vid-time">13:49</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide3.png' %}" alt="">
+															<span class="vid-time">2:54</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide4.png' %}" alt="">
+															<span class="vid-time">5:25</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide5.png' %}" alt="">
+															<span class="vid-time">4:01</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide6.png' %}" alt="">
+															<span class="vid-time">6:20</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide7.png' %}" alt="">
+															<span class="vid-time">8:16</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide8.png' %}" alt="">
+															<span class="vid-time">29:32</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+										</div>
+									</div><!--vidz_list end-->
+									<div class="video_pagination pagination-centered" style="margin-top: 30px;">
+										<ul class="pagination pagination-sm justify-content-center">
+											<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+											</li>
+										</ul>
+									</div>
+								</div><!--vidz_videos end-->
+								
+							</div>
+						</div><!--vidz-row end-->
+					</div><!--home_tb_details end-->
+				  </div>
+				  <div class="tab-pane fade" id="add_subtitles" role="tabpanel" aria-labelledby="channels-tab">
+					  <div class="container">
+						<div class="vidz-row">
+							<div class="container">
+								<div class="vidz_sec">
+									<h3>Add Subtitles: Latest Tasks</h3>
+									<div class="vidz_list">
+										<div class="row">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide1.png' %}" alt="">
+															<span class="vid-time">10:21</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+														<h4><span>Price : &nbsp; $5.50</span></h4>
+														<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide2.png' %}" alt="">
+															<span class="vid-time">13:49</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $6.20</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-05-20 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide3.png' %}" alt="">
+															<span class="vid-time">2:54</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Editing</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide4.png' %}" alt="">
+															<span class="vid-time">5:25</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide5.png' %}" alt="">
+															<span class="vid-time">4:01</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide6.png' %}" alt="">
+															<span class="vid-time">6:20</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide7.png' %}" alt="">
+															<span class="vid-time">8:16</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide8.png' %}" alt="">
+															<span class="vid-time">29:32</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
+															<h4><span>Price : &nbsp; $5.50</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+										</div>
+									</div><!--vidz_list end-->
+								</div><!--vidz_videos end-->
+							</div>
+						</div><!--vidz-row end-->
+						<div class="vidz-row">
+							<div class="container">
+								<div class="vidz_sec">
+									<h3>All Tasks</h3>
+									<div class="vidz_list">
+										<div class="row">
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide1.png' %}" alt="">
+															<span class="vid-time">10:21</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide2.png' %}" alt="">
+															<span class="vid-time">13:49</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide3.png' %}" alt="">
+															<span class="vid-time">2:54</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide4.png' %}" alt="">
+															<span class="vid-time">5:25</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide5.png' %}" alt="">
+															<span class="vid-time">4:01</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide6.png' %}" alt="">
+															<span class="vid-time">6:20</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">A day in the life of a Google software engineer</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide7.png' %}" alt="">
+															<span class="vid-time">8:16</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">Avengers: Infinity War - Gym Workout motivation 2019</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-6 col-6 full_wdth">
+												<div class="videoo">
+													<div class="vid_thumbainl">
+														<a href="/trade_video" title="">
+															<img src="{% static 'images/resources/vide8.png' %}" alt="">
+															<span class="vid-time">29:32</span>
+															<span class="watch_later">
+																<i class="icon-watch_later_fill"></i>
+															</span>
+														</a>	
+													</div><!--vid_thumbnail end-->
+													<div class="video_info">
+														<h3><a href="/trade_video" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+														<h4>Category : &nbsp;<span class="label label-info">Video Dubbing</h4>
+															<h4><span>Price : &nbsp; $10.00</span></h4>
+															<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+													</div>
+												</div><!--videoo end-->
+											</div>
+										</div>
+									</div><!--vidz_list end-->
+									<div class="video_pagination pagination-centered" style="margin-top: 30px;">
+										<ul class="pagination pagination-sm justify-content-center">
+											<li class="page-item disabled">
+											<a class="page-link" href="#" tabindex="-1">Previous</a>
+											</li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item">
+											<a class="page-link" href="#">Next</a>
+											</li>
+										</ul>
+									</div>
+								</div><!--vidz_videos end-->
+								
+							</div>
+						</div><!--vidz-row end-->
+					</div>
+				  </div>
+				  
+			</div>
+			<!-- insert end -->
         </section><!--vds-main end-->
 
 		<section class="more_items_sec text-center">
