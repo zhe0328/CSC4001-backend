@@ -146,57 +146,12 @@
 							<li><a href="/personal_homepage" title="">Personal Info</a></li>
 						</ul>
 					</nav><!--navigation end-->
-					<ul class="shr_links">
-						<li>
-							<h3>Go to : </h3>
-						</li>
-						<li>
-							<button data-toggle="tooltip" data-placement="top" title="Like">
-							  <i class="icon-like"></i>
-							</button>
-						</li>
-						<li>
-							<button data-toggle="tooltip" data-placement="top" title="Watch later">
-							  <i class="icon-watch_later"></i>
-							</button>
-						</li>
-						<li>
-							<button data-toggle="tooltip" data-placement="top" title="Playlist">
-							  <i class="icon-playlist"></i>
-							</button>
-						</li>
-						<li>
-							<button data-toggle="tooltip" data-placement="top" title="Purchased">
-							  <i class="icon-purchased"></i>
-							</button>
-						</li>
-						<li>
-							<button data-toggle="tooltip" data-placement="top" title="History">
-							  <i class="icon-history"></i>
-							</button>
-						</li>
-					</ul><!--shr_links end-->
-					<ul class="vid_thums">
-						<li>
-							<a class="active" href="#" title=""><i class="icon-grid"></i></a>
-						</li>
-						<li>
-							<a href="#" title="">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									 viewBox="0 0 108 108" xml:space="preserve">
-									<rect width="63" height="45"/>
-									<rect x="81" width="27" height="45"/>
-									<rect x="45" y="63" width="63" height="45"/>
-									<rect y="63" width="27" height="45"/>
-								</svg>
-							</a>
-						</li>
-					</ul><!--vid_status end-->
 					<div class="clearfix"></div>
 				</div><!--btm_bar_content end-->
 			</div>
 		</div><!--btm_bar end-->
 	</header><!--header end-->
+
 	<div class="side_menu">
 		<div class="form_dvv">
 			<a href="#" title="" class="login_form_show">Sign in</a>
@@ -362,6 +317,7 @@
 		</div><!--sd_menu end-->
 		<div class="dd_menu"></div>
 	</div><!--side_menu end-->
+
 	<section class="mn-sec">
 		<div class="container">
 			<div class="row">
@@ -376,17 +332,30 @@
 								    preload="auto"
 								    width="640"
 								    height="264"
-								    poster="{% static 'images/resources/poster-img.jpg' %}"
+								    poster="{% static 'images/new2.png' %}"
 								    data-setup="{}"
 								  >
-								    <source src="{% static 'images/demo_video.mp4" type="video/mp4" />
-								    <source src="demo_video.webm" type="video/webm" />
+								    <source src="{% static 'images/discovering.mp4' %}" type="video/mp4" />
 								</video>
 							</div><!--vid-pr end-->
 							<div class="vid-info">
-								<h3>Rainforests | National Geographic</h3>
+								<h3>Discovering: The admission video of The Chinese University of Hong Kong, Shenzhen</h3>
 								<div class="info-pr">
-									<span>Waiting for someone to accomplish!</span>
+									<span>60,723,169 views</span>
+									<ul class="pr_links">
+										<li>
+											<button data-toggle="tooltip" data-placement="top" title="I like this">
+												<i class="icon-thumbs_up_fill"></i>
+											</button>
+											<span>388K</span>
+										</li>
+										<li>
+											<button data-toggle="tooltip" data-placement="top" title="I dislike this">
+												<i class="icon-thumbs_down_fill"></i>
+											</button>
+											<span>28K</span>
+										</li>
+									</ul>
 									<div class="clearfix"></div>
 								</div><!--info-pr end-->
 							</div><!--vid-info end-->
@@ -399,9 +368,17 @@
 									</div>
 									<div class="vc_info pr">
 										<h4><a href="#" title="">ScereBro</a></h4>
-										<span>Published on March 22, 2021</span>
+										<span>Published on Oct 22, 2017</span>
 									</div>
 								</div><!--vcp_inf end-->							
+								<ul class="chan_cantrz">
+									<li>
+										<a href="#" title="" class="donate">Donate</a>
+									</li>
+									<li>
+										<a href="#" title="" class="subscribe">Subscribe <strong>13M</strong></a>
+									</li>
+								</ul><!--chan_cantrz end-->
 								<ul class="df-list">
 									<li>
 										<button data-toggle="tooltip" data-placement="top" title="Add to playlist">
@@ -434,35 +411,290 @@
 							<div class="clearfix"></div>
 							<div class="about-ch-sec">
 								<div class="abt-rw">
-									<h4>About : </h4>
-									<p> This task is about adding subtitles for a 30 minutes documentary film relevant to rainforests. Rainforests are home to over half of the world's plant and animal species. Learn about tropical and temperate rainforests, how they contribute to the global ecosystem, and the conservation efforts being done to protect these biomes.</p>
+									<h4>Cast:</h4>
+									<ul>
+										<li><span>Nathan Drake</span></li>
+										<li><span>Victor Sullivan </span></li>
+										<li><span>Sam Drake </span></li>
+										<li><span>Elena Fisher</span></li>
+									</ul>
 								</div>
-								<div class="abt-rw tgs">
+								<div class="abt-rw">
 									<h4>Category : </h4>
 									<ul>
-										<li><span>Adding Subtitles</span></li>
+										<li><span>Gaming</span></li>
+										<li><span>PS4 Exclusive  </span></li>
+										<li><span>Gameplay  </span></li>
+										<li><span>1080p</span></li>
 									</ul>
 								</div>
-                                <div class="abt-rw tgs">
-									<h4>Price : </h4>
-									<ul>
-										<li><span>$10.00</span></li>
-									</ul>
+								<div class="abt-rw">
+									<h4>About : </h4>
+									<p> Three years after the events of Uncharted 3: Drake's Deception, Nathan Drake, now retired as a fortune hunter, has settled into a normal life with his wife Elena Fisher. His world is then turned upside down when his older brother Sam, long believed to be dead, suddenly reappears seeking Drake's help. </p>
 								</div>
-                                <div class="abt-rw">
-									<h4>Deadline : </h4>
+								<div class="abt-rw tgs">
+									<h4>Tags : </h4>
 									<ul>
-										<li><span>2021-04-14 12:00</span></li>
+										<li><a href="#" title="">#Kingdom</a></li>
+										<li><a href="#" title="">#ImStillHereBecause </a></li>
+										<li><a href="#" title="">#denim</a></li>
+										<li><a href="#" title="">#tshirt</a></li>
 									</ul>
 								</div>
 							</div><!--about-ch-sec end-->
 						</div><!--abt-mk end-->
+						<div class="cmt-bx">
+							<ul class="cmt-pr">
+								<li><span>18,386</span> Comments</li>
+								<li>
+									<span><i class="icon-sort_by"></i><a href="#" title="">Sort By</a></span>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+							<div class="clearfix"></div>
+							<div class="vcp_inf pc">
+								<div class="vc_hd">
+									<img src="{% static 'images/resources/th1.png' %}" alt="">
+								</div>
+								<form>
+									<input type="text" placeholder="Add a public comment">
+									<button type="submit">Comment</button>
+								</form>
+								<div class="clearfix"></div>
+								<div class="rt-cmt">
+									<a href="#" title="">
+										<i class="icon-cancel"></i>
+									</a>
+									<div class="clearfix"></div>
+								</div><!--vcp_inf end-->
+							</div><!--cmt-bx end-->
+							<ul class="cmn-lst">
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th2.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<div class="pinned-comment">
+												<span><i class="icon-pinned"></i>Pinned by ScereBro</span>
+											</div>
+											<h2>ScereBro <small class="posted_dt"> . 18 hours ago</small></h2>
+											<p>Where does Thor: Ragnarok rank amongst the other Thor movies? Amongst the rest of the MCU? Let us know in the comments below and tell us which other movies you'd like to see us make Honest.</p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>680</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span>21</span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 164 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th3.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<h2>Doge <small class="posted_dt"> . 2 hours ago</small></h2>
+											<p>Depressive Alcoholics are my favorite superheroes </p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>61</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span>3</span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 26 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th4.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<h2>Juan Lacanaria <small class="posted_dt"> . 12 hours ago</small></h2>
+											<p>Can you please say "winner winner , chicken dinner" </p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>22</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span></span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 9 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th5.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<h2>Comander Lucky <small class="posted_dt"> . 2 weeks ago</small></h2>
+											<p>It looked like electro shuffle was most synced</p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>37</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span>3</span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 12 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th1.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<h2>Menji <small class="posted_dt"> . 1 week ago</small></h2>
+											<p>The floss, fresh, flapper, ride the pony were all in sync if you ask me plus if they used the original music they would be copyrighted. Plus the original music made it worst for these dances. </p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>147</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span>8</span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 7 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th3.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<h2>Storax Storm <small class="posted_dt"> . 11 hours ago</small></h2>
+											<p>Well Epic Games would have gotten Copyrighted if they used the original music but yea I see you</p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>71</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span>28</span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 21 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th2.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<h2>Nick Jacobs <small class="posted_dt"> . 6 hours ago</small></h2>
+											<p>Electro shuffle best dance hands down </p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>42</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span></span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 32 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+								<li>
+									<div class="vcp_inf">
+										<div class="vc_hd">
+											<img src="{% static 'images/resources/th4.png' %}" alt="">
+										</div>
+										<div class="coments">
+											<h2>Jumpman30  <small class="posted_dt"> . 2 hours ago</small></h2>
+											<p>bruh okay the original fresh music is the best hands down, it looks classy. the music they put on the fresh in fort nite  makes it worse </p>
+											<ul class="cmn-i">
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_up"></i>
+													</a>
+													<span>48</span>
+												</li>
+												<li>
+													<a href="#" title="">
+														<i class="icon-thumbs_down"></i>
+													</a>
+													<span>2</span>
+												</li>
+											</ul>
+											<a href="#" title="">View all 3 replies</a>
+										</div><!--coments end-->
+									</div><!--vcp_inf end-->
+								</li>
+							</ul><!--comment list end-->
+						</div>
 					</div><!--mn-vid-sc end--->
 				</div><!---col-lg-9 end-->
 				<div class="col-lg-3">
 					<div class="sidebar">
 						<div class="vidz-prt">
-							<h2 class="sm-vidz">Similar Tasks</h2>
+							<h2 class="sm-vidz">Similar Videos</h2>
+							<h3 class="aut-vid">
+								<span>Autoplay </span>
+								<label class="switch">
+									<input type="checkbox">
+								  	<b class="slider round"></b>
+								</label> 
+							</h3>
 							<div class="clearfix"></div>
 						</div><!--vidz-prt end-->
 						<div class="videoo-list-ab">
@@ -478,9 +710,8 @@
 								</div><!--vid_thumbnail end-->
 								<div class="video_info">
 									<h3><a href="#" title="">Kingdom Come: Deliverance Funny Moments and Fails</a></h3>
-									<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                    <h4><span>Price : &nbsp; $5.50</span></h4>
-									<span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
 								</div>
 							</div><!--videoo end-->
 							<div class="videoo">
@@ -495,9 +726,8 @@
 								</div><!--vid_thumbnail end-->
 								<div class="video_info">
 									<h3><a href="#" title="">DR DISRESPECT - Before They Were Famous - Twitch Streamer</a></h3>
-									<h4>Category : &nbsp;<span class="label label-info">Adding Subtitles</h4>
-                                        <h4><span>Price : &nbsp; $6.00</span></h4>
-                                        <span>Deadline : &nbsp; <small class="posted_dt">2021-04-12 22:00</small></span>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
 								</div>
 							</div><!--videoo end-->
 							<div class="videoo">
@@ -512,9 +742,91 @@
 								</div><!--vid_thumbnail end-->
 								<div class="video_info">
 									<h3><a href="#" title="">Top Perectly Timed Twitch Moments 2017 #7</a></h3>
-									<h4>Category : &nbsp;<span class="label label-info">Video Editing</h4>
-                                        <h4><span>Price : &nbsp; $12.00</span></h4>
-                                        <span>Deadline : &nbsp; <small class="posted_dt">2021-04-10 17:00</small></span>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
+								</div>
+							</div><!--videoo end-->
+							<div class="ad-rw">
+								<img src="{% static 'images/resources/ad-img.jpg' %}" alt="">
+							</div>
+							<div class="videoo">
+								<div class="vid_thumbainl">
+									<a href="single_video_page.html" title="">
+										<img src="{% static 'images/resources/vide4.png' %}" alt="">
+										<span class="vid-time">5:25</span>
+										<span class="watch_later">
+											<i class="icon-watch_later_fill"></i>
+										</span>
+									</a>	
+								</div><!--vid_thumbnail end-->
+								<div class="video_info">
+									<h3><a href="#" title="">Top 5 Amazing Bridge Block ever in PUBG</a></h3>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
+								</div>
+							</div><!--videoo end-->
+							<div class="videoo">
+								<div class="vid_thumbainl">
+									<a href="single_video_page.html" title="">
+										<img src="{% static 'images/resources/vide5.png' %}" alt="">
+										<span class="vid-time">4:01</span>
+										<span class="watch_later">
+											<i class="icon-watch_later_fill"></i>
+										</span>
+									</a>	
+								</div><!--vid_thumbnail end-->
+								<div class="video_info">
+									<h3><a href="#" title="">Trailer Park Boys Season 12 - Official Trailer</a></h3>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
+								</div>
+							</div><!--videoo end-->
+							<div class="videoo">
+								<div class="vid_thumbainl">
+									<a href="single_video_page.html" title="">
+										<img src="{% static 'images/resources/vide6.png' %}" alt="">
+										<span class="vid-time">6:20</span>
+										<span class="watch_later">
+											<i class="icon-watch_later_fill"></i>
+										</span>
+									</a>	
+								</div><!--vid_thumbnail end-->
+								<div class="video_info">
+									<h3><a href="#" title="">A day in the life of a Google software engineer</a></h3>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
+								</div>
+							</div><!--videoo end-->
+							<div class="videoo">
+								<div class="vid_thumbainl">
+									<a href="single_video_page.html" title="">
+										<img src="{% static 'images/resources/vide7.png' %}" alt="">
+										<span class="vid-time">8:16</span>
+										<span class="watch_later">
+											<i class="icon-watch_later_fill"></i>
+										</span>
+									</a>	
+								</div><!--vid_thumbnail end-->
+								<div class="video_info">
+									<h3><a href="#" title="">Avengers: Infinity War - Gym Workout</a></h3>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
+								</div>
+							</div><!--videoo end-->
+							<div class="videoo">
+								<div class="vid_thumbainl">
+									<a href="single_video_page.html" title="">
+										<img src="{% static 'images/resources/vide8.png' %}" alt="">
+										<span class="vid-time">29:32</span>
+										<span class="watch_later">
+											<i class="icon-watch_later_fill"></i>
+										</span>
+									</a>	
+								</div><!--vid_thumbnail end-->
+								<div class="video_info">
+									<h3><a href="#" title="">How the Universe Works - The Milky Way Galaxy - Space</a></h3>
+									<h4><a href="#" title="">newfox media</a> <span class="verify_ic"><i class="icon-tick"></i></span></h4>
+									<span>686K views .<small class="posted_dt">1 week ago</small></span>
 								</div>
 							</div><!--videoo end-->
 						</div><!--videoo-list-ab end-->
