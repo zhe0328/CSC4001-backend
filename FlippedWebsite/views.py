@@ -2,43 +2,13 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 import pandas as pd
 from django.db import connection
+from django.contrib.auth.decorators import login_required
+from . import utils
 import json
 
 
 def login(request):
     return render(request, 'login.html')
-
-
-def register(request):
-    return render(request, "signup.html")
-
-
-def index(request):
-    return render(request, 'index.html')
-
-
-def community(request):
-    return render(request, 'Community.html')
-
-
-def community_video(request):
-    return render(request, 'community_video.html')
-
-
-def trading(request):
-    return render(request, 'trading.html')
-
-
-def trading_video(request):
-    return render(request, "trad_video.html")
-
-
-def upload_video(request):
-    return render(request, "Upload_Video.html")
-
-
-def single_channel_home(request):
-    return render(request, "Single_Channel_Home.html")
 
 
 def login_validation(request):
@@ -58,6 +28,7 @@ def login_validation(request):
                 user_pwd = user_list.iloc[0, 0]
                 if user_pwd == password:
                     return_data["status"] = 100
+                    request.session['logined_username'] = username
                     return JsonResponse(return_data)
                 else:
                     return_data["status"] = 200
@@ -69,6 +40,45 @@ def login_validation(request):
                 connection.close()
     return_data["status"] = 400
     return JsonResponse(return_data)
+
+
+def register(request):
+    return render(request, "signup.html")
+
+
+@utils.my_login
+def index(request):
+    return render(request, 'index.html')
+
+
+@utils.my_login
+def community(request):
+    return render(request, 'Community.html')
+
+
+@utils.my_login
+def community_video(request):
+    return render(request, 'community_video.html')
+
+
+@utils.my_login
+def trading(request):
+    return render(request, 'trading.html')
+
+
+@utils.my_login
+def trading_video(request):
+    return render(request, "trad_video.html")
+
+
+@utils.my_login
+def upload_video(request):
+    return render(request, "Upload_Video.html")
+
+
+@utils.my_login
+def single_channel_home(request):
+    return render(request, "Single_Channel_Home.html")
 
 
 def create_user(request):
@@ -105,6 +115,7 @@ def create_user(request):
     return JsonResponse(return_data)
 
 
+@utils.my_login
 def upload_video_info(request):
     return_data = dict()
     if request.method == "POST":
@@ -155,6 +166,7 @@ def upload_video_info(request):
             connection.close()
 
 
+@utils.my_login
 def add_transaction(request):
     return_data = dict()
     if request.method == "POST":
@@ -186,6 +198,7 @@ def add_transaction(request):
             connection.close()
 
 
+@utils.my_login
 def show_trade_platform(request):
     return_data = dict()
     if request.method == "GET":
@@ -222,6 +235,7 @@ def show_trade_platform(request):
             connection.close()
 
 
+@utils.my_login
 def show_trade_video(request):
     return_data = dict()
     if request.method == "POST":
@@ -270,6 +284,7 @@ def show_trade_video(request):
             connection.close()
 
 
+@utils.my_login
 def show_todo_list(request):
     return_data = dict()
     if request.method == "POST":
@@ -313,6 +328,7 @@ def show_todo_list(request):
             connection.close()
 
 
+@utils.my_login
 def update_todo_list(request):
     return_data = dict()
     if request.method == "POST":
