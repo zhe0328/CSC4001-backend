@@ -19,12 +19,19 @@ class TestMethods(unittest.TestCase):
 
     def test_1_add_user(self):
         # response = self.client.post()
-        form_data = {'username': 'zzzz', 'email': 'zxw668@qq.com',
+        form_data = {'username': 'unittest3', 'email': 'zxw668@qq.com',
                      'password': 'qawsedrftg', 'gender': 'female'}
         r = requests.post(self.base_url+'create_user/', json=form_data)
         result = r.json()
         # print(r.json())
         self.assertEqual(result['status'], 100)
+
+    def test_3_add_transaction_abnormal(self):
+        form_data = {'username':'test', 'title': 'Google'}
+        r = requests.post(self.base_url+'add_transaction/', json=form_data)
+        result = r.json()
+        # print(r.json())
+        self.assertEqual(result['status'], 200)
 
     def test_3_add_transaction(self):
         form_data = {'username':'test', 'title': 'Google Developer Platform'}
